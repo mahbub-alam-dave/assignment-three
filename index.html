@@ -121,7 +121,7 @@
             
             <!-- challenge part (animation at hero section) -->
 
-            <div class="animation bg-white shadow-sm max-xs:p-2 sm:p-4 rounded-lg">
+            <div class="animation bg-white shadow-sm max-xs:p-3 p-4 rounded-lg">
               <h2 class="text-[clamp(1.25rem,3vw,2.4rem)] font-bold text-color-accent">30% Off</h2>
               <h3 class="text-[clamp(1rem,3vw,1.5rem)]">Sunday's Super Sale</h3>
              </div>
@@ -240,17 +240,13 @@
           </h2>
 
           <section
-            class="mx-auto grid grid-cols-1 xl:grid-cols-[1fr,_2fr] justify-center gap-6"
+            class="mx-auto flex flex-col lg:flex-row justify-center gap-6"
           >
-            <div
-              class="bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] max-w-[500px] rounded-2xl mx-auto"
-            >
-              <div class="flex flex-col gap-5 relative left-4 top-[20%]">
-                <h3
-                  class="font-adlam text text-[clamp(1.5rem,6.75vw,2rem)] text-white"
-                >
-                  30% off
-                </h3>
+ 
+            <div class="card bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] flex-1">
+              <div class="card-body pl-8 p-4 pb-0 md:p-12 md:pb-0 lg:p-4  lg:pb-0 xl:pl-8 mt-20">
+                <div class="flex flex-col gap-3 md:gap-6 lg:gap-4 xl:gap-6">
+                  <h2 class="card-title font-adlam text-[clamp(1.5rem,6.75vw,2rem)] text-white">30% off</h2>
                 <p class="text-[clamp(.75rem,3.5vw,1rem)] pr-8 text-color-one">
                   Discover a world of treats, toys, and essentials handpicked
                   for
@@ -262,23 +258,23 @@
                     Buy Now
                   </button>
                 </div>
+                </div>
+                <div class="card-actions justify-end">
+                  <img src="c2-assets/vegetable-offer.png" alt="">
+                </div>
               </div>
-
-              <figure class="flex justify-end">
-                <img src="c2-assets/vegetable-offer.png" alt="" />
-              </figure>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mx-auto lg:mx-0">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:mx-0">
               <div
                 class="flex items-center justify-center gap-3 bg-color-white rounded-lg shadow-md p-[clamp(4px,2vw,12px)]"
               >
                 <figure
                   class="bg-color-bg rounded-lg p-[clamp(4px,1vw,12px)] size-fit"
                 >
-                  <img
+                  <img 
                     src="c2-assets/tomato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -288,7 +284,7 @@
                     <figure>
                       <img
                         src="c2-assets/star.png"
-                        class="w-[clamp(11px,4vw,100%)]"
+                        class="w-[clamp(11px,4vw,100%)] "
                         alt=""
                       />
                     </figure>
@@ -317,7 +313,7 @@
                 >
                   <img
                     src="c2-assets/onion.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -356,7 +352,7 @@
                 >
                   <img
                     src="c2-assets/potato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -395,7 +391,7 @@
                 >
                   <img
                     src="c2-assets/tomato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -434,7 +430,7 @@
                 >
                   <img
                     src="c2-assets/onion.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -473,7 +469,7 @@
                 >
                   <img
                     src="c2-assets/potato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -512,7 +508,7 @@
                 >
                   <img
                     src="c2-assets/tomato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -551,7 +547,7 @@
                 >
                   <img
                     src="c2-assets/onion.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -590,7 +586,7 @@
                 >
                   <img
                     src="c2-assets/potato.png"
-                    class="w-[clamp(40px,10vw,100%)]"
+                    class="w-[clamp(40px,10vw,100%)] mx-auto"
                     alt=""
                   />
                 </figure>
@@ -815,7 +811,7 @@
           </p>
           <input
             type="text"
-            class="input w-[60%] lg:w-full text-[clamp(14px,2vw,16px)] leading-[32px] text-[#C4C4C4]"
+            class="input w-[80%] lg:w-full text-[clamp(14px,2vw,16px)] leading-[32px] text-[#C4C4C4]"
             placeholder="Enter email"
           />
 

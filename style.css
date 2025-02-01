@@ -24,6 +24,6 @@
     100% {
         top: 50px;
         left: 20%;
-        transform: skew(10deg, -5deg) scaleY(1);
+        transform: skew(5deg, -5deg) scaleY(1);
     }
 }
