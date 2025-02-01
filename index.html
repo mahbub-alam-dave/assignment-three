@@ -16,6 +16,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .font-sora {
@@ -55,7 +56,7 @@
     <header class="bg-gradient-to-b from-color-white to-color-bg px-4 pt-4">
       <section class="max-w-[1320px] w-full mx-auto mt-4">
         <!-- header nav section -->
-        <section class="flex gap-4 justify-between items-center">
+        <section class="flex gap-4 justify-between items-center z-60">
           <div>
             <img
               src="c2-assets/logo-header.png"
@@ -99,7 +100,7 @@
         </section>
         <!-- banner section -->
         <section
-          class="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 mt-12 md:mt-16 lg:mt-[90px] text-center"
+          class="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 mt-12 md:mt-16 lg:mt-[90px] text-center "
         >
           <h2
             class="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] text-color-one"
@@ -115,7 +116,22 @@
             Shop your daily essentials at unbeatable prices. From fresh produce
             to pantry <br />staples, we’ve got you covered every day!
           </p>
-          <figure><img src="c2-assets/hero-vegetables.png" alt="" /></figure>
+
+          <div class="relative">
+            
+            <!-- challenge part (animation at hero section) -->
+
+            <div class="animation bg-white shadow-sm max-xs:p-2 sm:p-4 rounded-lg">
+              <h2 class="text-[clamp(1.25rem,3vw,2.4rem)] font-bold text-color-accent">30% Off</h2>
+              <h3 class="text-[clamp(1rem,3vw,1.5rem)]">Sunday's Super Sale</h3>
+             </div>
+           
+           <!-- challenge part -->
+
+           <figure><img  src="c2-assets/hero-vegetables.png" alt="" /></figure>
+          </div>
+
+          
         </section>
       </section>
     </header>
@@ -218,13 +234,13 @@
           class="max-w-[1320px] flex flex-col gap-6 mx-auto my-12 lg:my-20"
         >
           <h2
-            class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold text-center max-xs:text-left lg:text-left"
+            class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold text-center max-xs:text-left xl:text-left"
           >
             Popular Products
           </h2>
 
           <section
-            class="mx-auto grid grid-cols-1 lg:grid-cols-[1fr,_2fr] justify-center gap-6"
+            class="mx-auto grid grid-cols-1 xl:grid-cols-[1fr,_2fr] justify-center gap-6"
           >
             <div
               class="bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] max-w-[500px] rounded-2xl mx-auto"
@@ -235,7 +251,7 @@
                 >
                   30% off
                 </h3>
-                <p class="text-[clamp(.75rem,3.5vw,1rem)] pr-4 text-color-one">
+                <p class="text-[clamp(.75rem,3.5vw,1rem)] pr-8 text-color-one">
                   Discover a world of treats, toys, and essentials handpicked
                   for
                 </p>
@@ -610,114 +626,98 @@
       </section>
 
       <!-- challlenge part -->
-      <section class="p-4 mt-12 md:mt-18 lg:mt-24">
-        <section class="max-w-[1320px] flex flex-col gap-6 mx-auto">
+
+      <section class=" mt-12 md:mt-18 lg:mt-24 p-4">
+        <div class="max-w-[1320px] w-full mx-auto flex flex-col gap-6">
           <h2
             class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold text-center max-xs:text-left lg:text-left"
           >
-            Latest Blogs
+            Seasonal Fruits
           </h2>
-
-          <div class="carousel carousel-end w-full flex gap-6">
-
-
-            
-              <div id="slide1" class="carousel-item">
-                <div
-                  class="bg-white shadow-sm flex flex-col items-start gap-2 max-w-[450px] w-full"
-                >
-                  <figure><img src="c2-assets/blog-one.jpg" alt="" /></figure>
-                  <time
-                    class="text-[clamp(12px,3vw,16px)] text-[rgba(17,17,17,0.7)]"
-                    datetime=""
-                    >2 February, 2025</time
-                  >
-                  <h3 class="text-[clamp(1rem,3vw,1.25rem)] font-semibold">
-                    Tomato Cultivation Guide
-                  </h3>
-                  <p
-                    class="text-[clamp(12px,3vw,16px)] text-color-one text-wrap pr-4"
-                  >
-                    Tomatoes are one of the most popular and widely grown
-                    vegetables worldwide.
-                  </p>
+          <div class="carousel w-full border border-black rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full py-12">
+              <div class="hero">
+                <div class="hero-content flex-col gap-6 lg:flex-row text-center lg:text-left ">
+                  <img
+                    src="c2-assets/strawberry.jpg"
+                    class="max-w-[400px] w-full rounded-lg " />
+                  <div class="flex flex-col items-center lg:items-start">
+                    <h1 class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold">Order Fresh Seasonal Fruits Online</h1>
+                    <p class="text-[clamp(1rem,2.75vw,1.25rem)] font-light text-color-one py-6">
+                      Enjoy the freshest seasonal fruits delivered straight to your doorstep in Bangladesh. Winter seasonal fruits are available now.
+                    </p>
+                    <div class="w-full max-w-[164px]">
+                      <button
+                        class="w-full btn bg-color-accent border-none text-[clamp(14px,2vw,20px)] text-color-white"
+                      >
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div id="slide2" class="carousel-item">
-                <div
-                  class="bg-white shadow-sm flex flex-col items-start gap-2 max-w-[450px] w-full"
-                >
-                  <figure><img src="c2-assets/blog-two.jpg" alt="" /></figure>
-                  <time
-                    class="text-[clamp(12px,3vw,16px)] text-[rgba(17,17,17,0.7)]"
-                    datetime=""
-                    >2 February, 2025</time
-                  >
-                  <h3 class="text-[clamp(1rem,3vw,1.25rem)] font-semibold">
-                    Tomato Cultivation Guide
-                  </h3>
-                  <p
-                    class="text-[clamp(12px,3vw,16px)] text-color-one text-wrap pr-4"
-                  >
-                    Tomatoes are one of the most popular and widely grown
-                    vegetables worldwide.
-                  </p>
-                </div>
-              </div>
-
-              <div id="slide3" class="carousel-item">
-                <div
-                  class="bg-white shadow-sm flex flex-col items-start gap-2 max-w-[450px] w-full"
-                >
-                  <figure><img src="c2-assets/blog-three.jpg" alt="" /></figure>
-                  <time
-                    class="text-[clamp(12px,3vw,16px)] text-[rgba(17,17,17,0.7)]"
-                    datetime=""
-                    >2 February, 2025</time
-                  >
-                  <h3 class="text-[clamp(1rem,3vw,1.25rem)] font-semibold">
-                    Tomato Cultivation Guide
-                  </h3>
-                  <p
-                    class="text-[clamp(12px,3vw,16px)] text-color-one text-wrap pr-4"
-                  >
-                    Tomatoes are one of the most popular and widely grown
-                    vegetables worldwide.
-                  </p>
-                </div>
-              </div>
-
-              <div id="slide4" class="carousel-item">
-                <div
-                  class="bg-white shadow-sm flex flex-col items-start gap-2 max-w-[450px] w-full"
-                >
-                  <figure><img src="c2-assets/blog-two.jpg" alt="" /></figure>
-                  <time
-                    class="text-[clamp(12px,3vw,16px)] text-[rgba(17,17,17,0.7)]"
-                    datetime=""
-                    >2 February, 2025</time
-                  >
-                  <h3 class="text-[clamp(1rem,3vw,1.25rem)] font-semibold">
-                    Tomato Cultivation Guide
-                  </h3>
-                  <p
-                    class="text-[clamp(12px,3vw,16px)] text-color-one text-wrap pr-4"
-                  >
-                    Tomatoes are one of the most popular and widely grown
-                    vegetables worldwide.
-                  </p>
-                </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn bg-color-accent text-white btn-circle">❮</a>
+                <a href="#slide2" class="btn bg-color-accent text-white btn-circle">❯</a>
               </div>
             </div>
 
-          <div class="flex w-full justify-center gap-2 py-2">
-            <a href="#slide" class="btn btn-circle">❮</a>
-            
-            <a href="#slide4" class="btn btn-circle">❯</a>
+            <div id="slide2" class="carousel-item relative w-full py-12">
+              <div class="hero">
+                <div class="hero-content flex-col gap-6 lg:flex-row text-center lg:text-left ">
+                  <img
+                    src="c2-assets/banana.jpg"
+                    class="max-w-[400px] w-full rounded-lg" />
+                  <div class="flex flex-col items-center lg:items-start">
+                    <h1 class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold">Order Fresh Seasonal Fruits Online</h1>
+                    <p class="text-[clamp(1rem,2.75vw,1.25rem)] font-light text-color-one py-6">
+                      Enjoy the freshest seasonal fruits delivered straight to your doorstep in Bangladesh. Winter seasonal fruits are available now.
+                    </p>
+                    <div class="w-full max-w-[164px]">
+                      <button
+                        class="w-full btn bg-color-accent border-none text-[clamp(14px,2vw,20px)] text-color-white"
+                      >
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn bg-color-accent text-white btn-circle">❮</a>
+                <a href="#slide3" class="btn bg-color-accent text-white btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full py-12">
+              <div class="hero">
+                <div class="hero-content flex-col gap-6 lg:flex-row text-center lg:text-left ">
+                  <img
+                    src="c2-assets/lemon.jpg"
+                    class="max-w-[400px] w-full rounded-lg" />
+                  <div class="flex flex-col items-center lg:items-start">
+                    <h1 class="text-[clamp(24px,4vw,36px)] text-color-accent font-semibold">Order Fresh Seasonal Fruits Online</h1>
+                    <p class="text-[clamp(1rem,2.75vw,1.25rem)] font-light text-color-one py-6">
+                      Enjoy the freshest seasonal fruits delivered straight to your doorstep in Bangladesh. Winter seasonal fruits are available now.
+                    </p>
+                    <div class="w-full max-w-[164px]">
+                      <button
+                        class="w-full btn bg-color-accent border-none text-[clamp(14px,2vw,20px)] text-color-white"
+                      >
+                        Order Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn bg-color-accent text-white btn-circle">❮</a>
+                <a href="#slide1" class="btn bg-color-accent text-white btn-circle">❯</a>
+              </div>
+            </div>
           </div>
 
-        </section>
+        </div>
       </section>
 
       <!-- arrival and offers sections -->
@@ -792,9 +792,10 @@
       </section>
     </main>
 
+    <!-- challenge part -->
     <div class="p-4 mt-12 md:mt-18 lg:mt-24">
       <div
-        class="max-w-[1320px] card w-full bg-color-bg flex flex-col lg:flex-row justify-center gap-6 lg:gap-16 bg-color-bg shadow-xl p-8 mx-auto mb-[-40%] lg:mb-[-20%] xl:mb-[-15%]"
+        class="max-w-[1320px] card w-full bg-color-bg flex flex-col lg:flex-row justify-center gap-6 lg:gap-16 bg-color-bg shadow-xl p-8 lg:p-12 mx-auto mb-[-40%] lg:mb-[-20%] xl:mb-[-15%]"
       >
         <figure class="">
           <img src="c2-assets/vegetable-busket.png" alt="Album" />
@@ -814,11 +815,11 @@
           </p>
           <input
             type="text"
-            class="input w-[80%] text-[clamp(14px,2vw,16px)] leading-[32px] text-[#C4C4C4]"
+            class="input w-[60%] lg:w-full text-[clamp(14px,2vw,16px)] leading-[32px] text-[#C4C4C4]"
             placeholder="Enter email"
           />
 
-          <div class="min-w-[120px] max-w-[164px]">
+          <div class="w-full max-w-[164px]">
             <button
               class="w-full btn bg-color-accent border-none text-[clamp(14px,2vw,20px)] text-color-white"
             >

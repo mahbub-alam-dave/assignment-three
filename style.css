@@ -1,0 +1,29 @@
+.animation {
+    position: absolute;
+    left: 30%;
+    animation: showAnimation .5s ease-in-out forwards;
+    z-index: 0;
+    transform: skewX(10deg);
+    
+}
+
+
+@keyframes showAnimation {
+    
+    0% {
+        top: 50px;
+        transform:  scaleY(0);
+    }
+
+    50% {
+        left: 15%;
+        top: 150px;
+        transform: rotate(180deg) scaleY(1.2);
+    }
+
+    100% {
+        top: 50px;
+        left: 20%;
+        transform: skew(10deg, -5deg) scaleY(1);
+    }
+}
