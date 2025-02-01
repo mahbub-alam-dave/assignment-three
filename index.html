@@ -51,7 +51,7 @@
       };
     </script>
   </head>
-  <body class="font-sora max-w-[1600px] mx-auto">
+  <body class="font-sora max-w-[1600px] border-l border-r shadow-md mx-auto">
     <header class="bg-gradient-to-b from-color-white to-color-bg px-4 pt-4">
       <section class="max-w-[1320px] w-full mx-auto mt-4">
         <!-- header nav section -->
@@ -643,46 +643,52 @@
     </main>
 
 
-    <div class="p-4 mt-12 md:mt-18 lg:mt-24">
-      <div class="max-w-[1320px] w-full card flex flex-col lg:flex-row justify-around bg-color-bg shadow-xl p-8 space-y-8 mx-auto mb-[-40%] lg:mb-[-20%] xl:mb-[-15%]">
+    <div class="p-4 mt-12 md:mt-18 lg:mt-24 ">
+      <div class="max-w-[1320px] card w-full bg-color-bg flex flex-col lg:flex-row justify-center gap-6 lg:gap-16 bg-color-bg shadow-xl p-8 mx-auto mb-[-40%] lg:mb-[-20%] xl:mb-[-15%]">
         <figure class="">
           <img
             src="c2-assets/vegetable-busket.png"
             alt="Album" />
         </figure>
-        <div class="flex flex-col gap-6 justify-center items-center lg:items-start">
-          <h2 class="card-title   sm:text-color-one text-color-accent">Get Grocery News!</h2>
-          <p class="text-center lg:text-left">Exclusive training tips, ticks, product deals and more.</p>
-          <input type="text" class="input w-[80%]" placeholder="Enter email">
-          <button class="btn bg-color-accent border-none text-color-white">Subscribe</button>
+        <div class="flex flex-col max-xs:gap-4 gap-6 justify-center items-center lg:items-start">
+          
+          <h2 class="text-[clamp(24px,4vw,36px)] font-semibold sm:text-color-one text-color-accent text-center lg:text-left">Get Grocery News!</h2>
+          <p class="text-center lg:text-left text-[clamp(1rem,2.5vw,1.25rem)] text-color-one">Exclusive training tips, ticks, product deals and more.</p>
+          <input type="text" class="input w-[80%] text-[clamp(14px,2vw,16px)] leading-[32px] text-[#C4C4C4]" placeholder="Enter email">
+          
+            <div class="min-w-[120px] max-w-[164px]"><button class="w-full btn bg-color-accent border-none text-[clamp(14px,2vw,20px)] text-color-white">Subscribe</button></div>
+        
         </div>
       </div>
     </div>
 
-    <footer class="bg-color-accent p-4 ">
+    <footer class="bg-color-accent p-4 z-0">
 
         <div class="max-w-[1320px] w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-8 mt-[40%] lg:mt-[20%] xl:mt-[15%]">
           <nav class="flex flex-col gap-4 md:gap-3 ">
-            <figure><img src="c2-assets/logo-footer.png" alt=""></figure>
-            <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            <figure class="min-w-[100px] max-w-[155px]"><img class="w-full h-auto" src="c2-assets/logo-footer.png" alt=""></figure>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-[rgba(255,255,255,0.7)]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
           </nav>
 
           <div class=" md:grid justify-center">
           <nav class="flex flex-col justify-between gap-5 md:gap-8">
             
-            <a class="link link-hover">Products</a>
-            <a class="link link-hover">Services</a>
-            <a class="link link-hover">Contact Us</a>
+            <a class="link link-hover text-[clamp(1rem,2vw,1.25rem)] text-[rgba(255,255,255)]">Products</a>
+            <a class="link link-hover text-[clamp(1rem,2vw,1.25rem)] text-[rgba(255,255,255)]">Services</a>
+            <a class="link link-hover text-[clamp(1rem,2vw,1.25rem)] text-[rgba(255,255,255)]">Contact Us</a>
           </nav>
         </div>
           
             <nav class="md:grid justify-end items-end space-y-4">
-              <p>Follow Us</p>
-              <div class="flex items-center gap-4">
+              
+              <div class="flex flex-col gap-4">
+                <p class="text-[clamp(14px,2vh,16px)] text-white">Follow Us</p>
+                <div class="flex gap-4 items-center">
                 <img class="size-fit" src="c2-assets/facebook.png" alt="">
                 <img src="c2-assets/instgram.png" alt="">
                 <img src="c2-assets/linkedin.png" alt="">
                 <img src="c2-assets/youtube.png" alt="">
+                </div>
               </div>
             </nav>
           </div>
